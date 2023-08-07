@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+:root {
+    /* colors */
+    --primario: #9097fd;
+    --secundario: #c4c7ce;
+    --claro: #f9faf5;
+    --grisclaro: #f9faf5;
+    --gradient: linear-gradient(180deg, rgb(133, 175, 17), rgba(15,95,57,1) 100%);
+}
+
+body {
+    background-color: var(--claro);
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primario);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.section__card {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    padding: 2rem;
+    border: none;
+    box-shadow: 0px 0px 70px -58px var(--primario);
+}
+
+.btn_proyecto {
+    height: 2rem;
+    padding: .5rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #9097fd;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: ;
+    }
+}
