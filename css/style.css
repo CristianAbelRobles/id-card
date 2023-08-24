@@ -4,77 +4,95 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
 }
 
 :root {
     /* colors */
-    --primario: #9097fd;
-    --secundario: #c4c7ce;
+    --primario: #3dbcff;
+    --secundario: #ffc969;
     --claro: #f9faf5;
     --grisclaro: #f9faf5;
     --gradient: linear-gradient(180deg, rgb(133, 175, 17), rgba(15,95,57,1) 100%);
 }
 
-body {
-    background-color: var(--claro);
-
+section {
+    /* font-family: 'Roboto', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Victor Mono', monospace;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
-    font-size: 3rem;
+    margin-top: 6rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: var(--primario);
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
     font-size: 1.6rem;
 }
 
-h4 {
+h3 {
     font-size: 1.4rem;
 }
 
-h5 {
+h4 {
     font-size: 1.2rem;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.section__card {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
 .card {
-    max-width: 90%;
-    max-height: 90%;
-    overflow: hidden;
-    padding: 2rem;
-    border: none;
-    box-shadow: 0px 0px 70px -58px var(--primario);
+    max-height: 80vh;
+    max-width: 50vw;
+    text-align: center;
 }
 
-.btn_proyecto {
-    height: 2rem;
-    padding: .5rem 2rem;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #9097fd;
-    border-radius: 10px;
+.user {
+    width: 10rem;
+    border-radius: 50%;
+}
 
-    &:hover {
-        background-color: ;
+@media (max-width: 992px) {
+    
+    h1 {
+        margin-top: 4rem;
+        font-size: 1.4rem;
     }
+
+    .card {
+        min-width: 70vw;
+        min-height: 60vh;
+    }
+
+    .user {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    
+    .card {
+        max-width: 90vw;
+    }
+
 }
